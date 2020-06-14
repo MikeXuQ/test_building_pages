@@ -71,11 +71,11 @@ function onClick2(arg) {
     if (data_ == "Objects") {
         sketch_path = 'Object/Sketch/';
         gt_path = 'Object/GT/';
-        json_path = 'https://cdn.jsdelivr.net/gh/sysu-imsl/CDN-for-SketchyCOCO-added@1.2/Object.json'
+        json_path = 'https://cdn.jsdelivr.net/gh/sysu-imsl/CDN-for-SketchyCOCO-added@1.4/Object.json'
     } else {
         sketch_path = 'Scene/Sketch/';
         gt_path = 'Scene/GT/';
-        json_path = 'https://cdn.jsdelivr.net/gh/sysu-imsl/CDN-for-SketchyCOCO-added@1.2/Scene.json'
+        json_path = 'https://cdn.jsdelivr.net/gh/sysu-imsl/CDN-for-SketchyCOCO-added@1.4/Scene.json'
     }
     $.ajax({
         type:'get',
@@ -85,12 +85,12 @@ function onClick2(arg) {
             console.log(data_type)
             if (data_ == "Objects") {
                 var tmp = data[data_type.toString()]
-                var pre_head = "https://cdn.jsdelivr.net/gh/sysu-imsl/CDN-for-SketchyCOCO-added@1.2/";
-                var pre_head2 = "https://cdn.jsdelivr.net/gh/sysu-imsl/CDN-for-SketchyCOCO-added@1.2/";
+                var pre_head = "https://cdn.jsdelivr.net/gh/sysu-imsl/CDN-for-SketchyCOCO-added@1.4/";
+                var pre_head2 = "https://cdn.jsdelivr.net/gh/sysu-imsl/CDN-for-SketchyCOCO-added@1.4/";
             } else {
                 var tmp = data.data;
                 var pre_head = "https://cdn.jsdelivr.net/gh/sysu-imsl/CDN-for-SketchyCOCO@v1.0/data/";
-                var pre_head2 = "https://cdn.jsdelivr.net/gh/sysu-imsl/CDN-for-SketchyCOCO-added@1.2/";
+                var pre_head2 = "https://cdn.jsdelivr.net/gh/sysu-imsl/CDN-for-SketchyCOCO-added@1.4/";
             }
             // console.log(tmp)
             var counter = 0;
